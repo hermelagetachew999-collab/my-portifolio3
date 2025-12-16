@@ -55,13 +55,7 @@ export default function Projects() {
       </motion.h2>
 
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "1.5rem",
-          maxWidth: "1000px",
-          margin: "0 auto",
-        }}
+        className="projects-grid"
       >
         {projects.map((project, index) => (
           <motion.div
@@ -117,7 +111,7 @@ export default function Projects() {
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#fb92e4ff")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
               >
-                View Project
+                View
               </a>
             </div>
           </motion.div>

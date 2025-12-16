@@ -8,31 +8,14 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        minHeight: "100vh",
-        padding: "0 5%",
-        background: "rgba(0, 0, 0, 0.8)",
-        color: "rgba(232, 217, 227, 0.8)",
-        fontWeight: "bold",
-        flexWrap: "wrap",
-      }}
+      className="hero-section"
     >
       {/* LEFT SIDE — PROFILE IMAGE */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        style={{
-          position: "relative",
-          width: "300px",
-          height: "380px",
-          borderRadius: "50%",
-          overflow: "hidden",
-          background: "rgba(0, 0, 0, 0.8)",
-        }}
+        className="hero-left"
       >
         <motion.img
           src="/profile.jpg"
@@ -50,21 +33,13 @@ export default function Hero() {
 
       {/* RIGHT SIDE — TEXTS & ICONS */}
       <div
-        style={{
-          flex: 1,
-          minWidth: "300px",
-          textAlign: "left",
-          marginLeft: "6rem", // ⬅️ shifted text further to the right
-        }}
+        className="hero-right"
       >
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{
-            fontSize: "2.5rem",
-            marginBottom: "1rem",
-          }}
+          className="hero-title"
         >
           Hello, I’m <span style={{ color: "rgba(243, 236, 240, 0.8)" }}>Hermela</span>
         </motion.h1>
@@ -73,10 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          style={{
-            fontSize: "1.8rem",
-            marginBottom: "1.5rem",
-          }}
+          className="hero-subtitle"
         >
           <ReactTyped
             strings={[
@@ -94,25 +66,14 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          style={{
-            fontSize: "0.95rem",
-            lineHeight: "1.6",
-            maxWidth: "500px",
-            fontWeight: "lighter"
-          }}
+          className="hero-description"
         >
           I am a web developer with a focus on modern, responsive frontend development using React. I have extensive experience in creating complete web applications, encompassing everything from user interface design to backend integration.
         </motion.p>
 
         {/* 🌸 SOCIAL ICONS BELOW TEXT */}
         <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            marginTop: "1.5rem",
-            alignItems: "center",
-            justifyContent: "flex-start",
-          }}
+          className="hero-icons"
         >
           {/* LinkedIn */}
           <a

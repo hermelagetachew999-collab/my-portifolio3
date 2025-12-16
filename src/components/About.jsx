@@ -18,15 +18,7 @@ export default function About() {
   return (
     <section
       id="about"
-      style={{
-        padding: "6rem 2rem 8rem",
-        textAlign: "center",
-        background: "#ffffff", // white background
-        color: "#000000", // black text
-        position: "relative",
-        overflow: "visible",
-        minHeight: "50vh",
-      }}
+      className="about-section"
     >
       <div
         style={{
@@ -39,12 +31,7 @@ export default function About() {
       />
 
       <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
+        className="about-inner"
       >
         <h2
           style={{
@@ -59,13 +46,7 @@ export default function About() {
         </h2>
 
         <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "stretch",
-            gap: "2rem",
-          }}
+          className="about-cards"
         >
           {[
             {
@@ -87,21 +68,7 @@ export default function About() {
           ].map((card, index) => (
             <div
               key={index}
-              style={{
-                flex: "1 1 300px",
-                minWidth: "340px",
-                maxWidth: "450px",
-                maxHeight: "170px",
-                background: "rgba(0,0,0,0.05)",
-                borderRadius: "20px",
-                padding: "0.7rem",
-                boxShadow: "0 4px 12px #fb92e4ff",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-start",
-                textAlign: "left",
-              }}
+              className="about-card"
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-10px)";
                 e.currentTarget.style.boxShadow = "0 8px 20px #fb92e4ff";
