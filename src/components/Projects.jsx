@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import knowledgeHubImg from "../assets/knowledge-hub.svg";
-import quickcartImg from "../assets/quickcart.svg";
-import mystreamImg from "../assets/mystream.svg";
+import knowledgeHubImg from "../assets/knowledge-hub.jpg";
+import quickcartImg from "../assets/quickcart.jpg";
+import mystreamImg from "../assets/mystream.jpg";
 
 export default function Projects() {
   const projects = [
