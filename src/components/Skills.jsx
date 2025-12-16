@@ -48,12 +48,12 @@ export default function Skills() {
   const sectionStyle = {
     flex: "1 1 140px",
     background: "rgba(0,0,0,0.04)",
-    padding: "0.5rem",
-    borderRadius: "8px",
+    padding: "0.45rem",
+    borderRadius: "6px",
     boxShadow: "0 3px 8px #0b1f3b",
     color: "#000000",
     minWidth: "140px",
-    maxWidth: "180px",
+    maxWidth: "200px",
   };
 
   const skillsContainerStyle = {
@@ -124,15 +124,15 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             whileHover="hover"
             style={{
               background: "rgba(0,0,0,0.05)",
-              borderRadius: "20px",
-              padding: "0.15rem 0.5rem",
+              borderRadius: "6px",
+              padding: "0.25rem 0.6rem",
               display: "flex",
               alignItems: "center",
-              gap: "0.2rem",
-              fontSize: "0.7rem",
+              gap: "0.4rem",
+              fontSize: "0.82rem",
               boxShadow: "0 1px 2px #0b1f3b",
               cursor: "pointer",
-              height: "20px",
+              height: "28px",
             }}
           >
             {skill.icon && <span style={{ fontSize: "0.9rem" }}>{skill.icon}</span>}

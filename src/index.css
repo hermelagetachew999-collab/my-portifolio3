@@ -143,9 +143,9 @@ button:focus-visible {
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* increase min width */
+  gap: 2rem;
+  max-width: 1200px; /* allow larger project cards */
   margin: 0 auto;
 }
 

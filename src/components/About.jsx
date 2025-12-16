@@ -79,7 +79,7 @@ export default function About() {
                 e.currentTarget.style.boxShadow = "0 4px 12px #0b1f3b";
               }}
             >
-              <h3 style={{ fontSize: "1.3rem", marginBottom: "0.8rem", color: "#000000" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "0.25rem", color: "#000000" }}>
                 {card.title}
               </h3>
               <p
