@@ -121,7 +121,9 @@ export default function Hero() {
 
           {/* Email */}
           <a
-            href="hermelagetachew999@gmail.com"
+            href="mailto:hermelagetachew999@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               color: "#ffffffff",
               fontSize: "1.6rem",

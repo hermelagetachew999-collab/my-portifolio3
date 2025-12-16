@@ -104,6 +104,8 @@ export default function Contact() {
         {/* Email */}
         <a
           href="mailto:hermelagetachew999@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             ...iconBaseStyle,
             color: "#000",
