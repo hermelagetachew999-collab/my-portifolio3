@@ -93,8 +93,8 @@ button:focus-visible {
   justify-content: space-between;
   min-height: 100vh;
   padding: 0 5%;
-  background: rgba(0, 0, 0, 0.8);
-  color: rgba(232, 217, 227, 0.8);
+  background: #ffffff; /* make hero background pure white */
+  color: #000000; /* hero text black */
   font-weight: bold;
   flex-wrap: wrap;
 }
@@ -105,7 +105,7 @@ button:focus-visible {
   height: 380px;
   border-radius: 50%;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.8);
+  background: transparent; /* keep image visible on white background */
 }
 
 .hero-right {
