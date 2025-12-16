@@ -66,7 +66,7 @@ export default function Hero() {
             marginBottom: "1rem",
           }}
         >
-          Hi, I’m <span style={{ color: "rgba(232, 217, 227, 0.8)" }}>Hermela</span>
+          Hello, I’m <span style={{ color: "rgba(243, 236, 240, 0.8)" }}>Hermela</span>
         </motion.h1>
 
         <motion.h2
@@ -80,9 +80,9 @@ export default function Hero() {
         >
           <ReactTyped
             strings={[
-              "Full Stack Developer",
-              "Designer",
-              "Creator",
+              "Web Developer(React)",
+              "Clean UI",
+              "Fast & Responsive Websites",
             ]}
             typeSpeed={50}
             backSpeed={30}
@@ -95,13 +95,13 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           style={{
-            fontSize: "1rem",
+            fontSize: "0.95rem",
             lineHeight: "1.6",
             maxWidth: "500px",
+            fontWeight: "lighter"
           }}
         >
-          A passionate web developer who enjoys building modern, responsive,
-          and user-friendly digital experiences.
+          I am a web developer with a focus on modern, responsive frontend development using React. I have extensive experience in creating complete web applications, encompassing everything from user interface design to backend integration.
         </motion.p>
 
         {/* 🌸 SOCIAL ICONS BELOW TEXT */}

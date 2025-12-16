@@ -21,30 +21,7 @@ export default function Projects() {
       link: "https://mystream-rho.vercel.app/",
       image: "https://via.placeholder.com/300x150?text=MyStream",
     },
-    {
-      title: "Portfolio Website",
-      description: "A personal site built to display my projects and skills interactively.",
-      link: "#",
-      image: "https://via.placeholder.com/300x150?text=Portfolio",
-    },
-    {
-      title: "E-Commerce Platform",
-      description: "An online shopping platform with a secure checkout system.",
-      link: "#",
-      image: "https://via.placeholder.com/300x150?text=E-Commerce",
-    },
-    {
-      title: "Task Manager",
-      description: "A productivity app for creating and organizing daily tasks.",
-      link: "#",
-      image: "https://via.placeholder.com/300x150?text=Task+Manager",
-    },
-    {
-      title: "Blog Platform",
-      description: "A full-featured blog app with user authentication and content editing.",
-      link: "#",
-      image: "https://via.placeholder.com/300x150?text=Blog",
-    },
+
   ];
 
   const projectVariants = {
