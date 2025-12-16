@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="hero-title"
         >
-          Hello, I’m <span style={{ color: "rgba(243, 236, 240, 0.8)" }}>Hermela</span>
+           Hello, I’m <span style={{ color: "rgba(243, 236, 240, 0.8)" }}>Hermela</span>
         </motion.h1>
 
         <motion.h2
@@ -88,6 +88,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
+                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -110,6 +111,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
+                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -132,6 +134,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
+                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -154,6 +157,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
+                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";

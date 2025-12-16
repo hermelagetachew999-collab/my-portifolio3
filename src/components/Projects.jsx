@@ -48,7 +48,7 @@ export default function Projects() {
           fontSize: "2.3rem",
           marginBottom: "3rem",
           color: "#000000",
-          textShadow: "0 0 10px #fb92e4ff",
+          textShadow: "0 0 10px #ff4d4d",
         }}
       >
         🛠️ My Projects
@@ -63,15 +63,15 @@ export default function Projects() {
             variants={projectVariants}
             initial="hidden"
             animate="visible"
-            whileHover={{
+              whileHover={{
               scale: 1.05,
-              boxShadow: "0 6px 16px #fb92e4ff",
+              boxShadow: "0 6px 16px #ff4d4d",
             }}
             style={{
               backgroundColor: "rgba(0,0,0,0.05)",
               borderRadius: "10px",
               overflow: "hidden",
-              boxShadow: "0 4px 12px #fb92e4ff",
+              boxShadow: "0 4px 12px #ff4d4d",
               transition: "all 0.3s ease",
             }}
           >
@@ -111,7 +111,7 @@ export default function Projects() {
                   transition: "background 0.3s ease",
                   cursor: "pointer",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#fb92e4ff")}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#ff4d4d")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
               >
                 View

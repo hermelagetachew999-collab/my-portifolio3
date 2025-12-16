@@ -47,7 +47,7 @@ export default function Skills() {
     background: "rgba(0,0,0,0.05)",
     padding: "0.8rem",
     borderRadius: "10px",
-    boxShadow: "0 4px 12px #fb92e4ff",
+    boxShadow: "0 4px 12px #ff4d4d",
     color: "#000000",
     minWidth: "180px",
     maxWidth: "220px",
@@ -86,7 +86,7 @@ export default function Skills() {
           fontSize: "1.8rem",
           marginBottom: "2rem",
           color: "#000000",
-          textShadow: "0 0 8px #fb92e4ff",
+          textShadow: "0 0 8px #ff4d4d",
         }}
       >
         ⚙️ My Skills
@@ -127,7 +127,7 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
               alignItems: "center",
               gap: "0.1rem",
               fontSize: "0.75rem",
-              boxShadow: "0 1px 3px #fb92e4ff",
+              boxShadow: "0 1px 3px #ff4d4d",
               cursor: "pointer",
               height: "15px",
             }}

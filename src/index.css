@@ -204,7 +204,7 @@ button:focus-visible {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 0.7rem;
-  box-shadow: 0 4px 12px #fb92e4ff;
+  box-shadow: 0 4px 12px #ff4d4d;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;

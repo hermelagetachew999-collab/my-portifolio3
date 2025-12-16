@@ -8,7 +8,7 @@ export default function Contact() {
     fontSize: "2.5rem",
     transition: "transform 0.3s, box-shadow 0.3s",
     cursor: "pointer",
-    boxShadow: "0 0 15px #fb92e4ff",
+    boxShadow: "0 0 15px #ff4d4d",
     borderRadius: "50%",
   };
 
@@ -19,7 +19,7 @@ export default function Contact() {
     display: "inline-block",
     cursor: "pointer",
     color: "#000",
-    textShadow: "0 0 10px #fb92e4ff",
+    textShadow: "0 0 10px #ff4d4d",
   };
 
   const [hoverHeading, setHoverHeading] = useState(false);
@@ -32,7 +32,7 @@ export default function Contact() {
         textAlign: "center",
         backgroundColor: "#fff",
         color: "#000",
-        boxShadow: "0 0 30px #fb92e4ff inset",
+        boxShadow: "0 0 30px #ff4d4d inset",
       }}
     >
       {/* Contact Me heading */}
@@ -69,7 +69,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #fb92e4ff";
+            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -91,7 +91,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #fb92e4ff";
+            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -113,7 +113,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #fb92e4ff";
+            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -135,7 +135,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #fb92e4ff";
+            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
