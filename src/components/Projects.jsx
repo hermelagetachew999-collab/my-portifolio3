@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import knowledgeHubImg from "../assets/knowledge-hub.svg";
+import quickcartImg from "../assets/quickcart.svg";
+import mystreamImg from "../assets/mystream.svg";
 
 export default function Projects() {
   const projects = [
@@ -7,22 +10,19 @@ export default function Projects() {
       title: "Smart Knowledge Hub",
       description: "An interactive platform for sharing and accessing educational resources and knowledge.",
       link: "https://smart-knowledge-hub-psi.vercel.app/",
-      // use first pasted image: place file at src/assets/knowledge-hub.jpg
-      image: "/assets/knowledge-hub.jpg",
+      image: knowledgeHubImg,
     },
     {
       title: "QuickCart",
       description: "A modern e-commerce application featuring product browsing, cart management, and checkout.",
       link: "https://quickcart-frontend-mu.vercel.app/",
-      // use second pasted image: place file at src/assets/quickcart.jpg
-      image: "/assets/quickcart.jpg",
+      image: quickcartImg,
     },
     {
       title: "MyStream",
       description: "A seamless video streaming platform for watching and discovering content.",
       link: "https://mystream-rho.vercel.app/",
-      // use third pasted image: place file at src/assets/mystream.jpg
-      image: "/assets/mystream.jpg",
+      image: mystreamImg,
     },
 
   ];
