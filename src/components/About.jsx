@@ -27,6 +27,7 @@ export default function About() {
           background:
             "radial-gradient(circle at top left, rgba(0,0,0,0.05), transparent 70%)",
           zIndex: 0,
+          pointerEvents: "none",
         }}
       />
 
