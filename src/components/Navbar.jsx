@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
  { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
@@ -94,7 +94,7 @@ export default function Navbar() {
                   transition: "color 0.3s",
                 }}
                 onMouseEnter={(e) => (e.target.style.color = "#66ccff")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
+                onMouseLeave={(e) => (e.target.style.color = "#000000ff")}
               >
                 {item.name}
               </a>
