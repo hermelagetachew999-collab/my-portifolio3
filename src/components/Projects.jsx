@@ -99,6 +99,8 @@ export default function Projects() {
               </p>
               <a
                 href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   padding: "0.4rem 0.8rem",
                   backgroundColor: "#000000",
@@ -107,6 +109,7 @@ export default function Projects() {
                   textDecoration: "none",
                   fontWeight: "500",
                   transition: "background 0.3s ease",
+                  cursor: "pointer",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#fb92e4ff")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
