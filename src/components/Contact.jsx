@@ -8,7 +8,7 @@ export default function Contact() {
     fontSize: "2.5rem",
     transition: "transform 0.3s, box-shadow 0.3s",
     cursor: "pointer",
-    boxShadow: "0 0 15px #ff4d4d",
+    boxShadow: "0 0 15px #0b1f3b",
     borderRadius: "50%",
   };
 
@@ -18,8 +18,8 @@ export default function Contact() {
     transition: "transform 0.3s, color 0.3s",
     display: "inline-block",
     cursor: "pointer",
-    color: "#000",
-    textShadow: "0 0 10px #ff4d4d",
+    color: "#0b1f3b",
+    textShadow: "0 0 10px #0b1f3b",
   };
 
   const [hoverHeading, setHoverHeading] = useState(false);
@@ -32,7 +32,7 @@ export default function Contact() {
         textAlign: "center",
         backgroundColor: "#fff",
         color: "#000",
-        boxShadow: "0 0 30px #ff4d4d inset",
+        boxShadow: "0 0 30px #0b1f3b inset",
       }}
     >
       {/* Contact Me heading */}
@@ -69,7 +69,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
+            e.currentTarget.style.textShadow = "0 0 25px #0b1f3b";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -91,7 +91,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
+            e.currentTarget.style.textShadow = "0 0 25px #0b1f3b";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -113,7 +113,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
+            e.currentTarget.style.textShadow = "0 0 25px #0b1f3b";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";
@@ -135,7 +135,7 @@ export default function Contact() {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.3)";
-            e.currentTarget.style.textShadow = "0 0 25px #ff4d4d";
+            e.currentTarget.style.textShadow = "0 0 25px #0b1f3b";
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = "scale(1)";

@@ -39,8 +39,8 @@ export default function About() {
             fontSize: "2.7rem",
             marginBottom: "1rem",
             marginTop: "0.3rem",
-            color: "#000000", // black title
-            textShadow: "0 0 10px #ff4d4d", // soft red glow
+            color: "#0b1f3b", // blue-black title
+            textShadow: "0 0 10px #0b1f3b", // soft blue-black glow
           }}
         >
           About Me
@@ -72,11 +72,11 @@ export default function About() {
               className="about-card"
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-10px)";
-                e.currentTarget.style.boxShadow = "0 8px 20px #ff4d4d";
+                e.currentTarget.style.boxShadow = "0 8px 20px #0b1f3b";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "0 4px 12px #ff4d4d";
+                e.currentTarget.style.boxShadow = "0 4px 12px #0b1f3b";
               }}
             >
               <h3 style={{ fontSize: "1.3rem", marginBottom: "0.8rem", color: "#000000" }}>

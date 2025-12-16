@@ -88,7 +88,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
+                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -111,7 +111,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
+                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -134,7 +134,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
+                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -157,7 +157,7 @@ export default function Hero() {
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
               e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #ff4d4d";
+                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
