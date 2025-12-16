@@ -104,7 +104,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: "#ffffffff",
+              color: "#0b1f3b",
               fontSize: "1.6rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
@@ -127,7 +127,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: "#ffffffff",
+              color: "#0b1f3b",
               fontSize: "1.6rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
