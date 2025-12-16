@@ -7,19 +7,22 @@ export default function Projects() {
       title: "Smart Knowledge Hub",
       description: "An interactive platform for sharing and accessing educational resources and knowledge.",
       link: "https://smart-knowledge-hub-psi.vercel.app/",
-      image: "/smart_knowledge_hub.png",
+      // use first pasted image: place file at src/assets/knowledge-hub.jpg
+      image: "/assets/knowledge-hub.jpg",
     },
     {
       title: "QuickCart",
       description: "A modern e-commerce application featuring product browsing, cart management, and checkout.",
       link: "https://quickcart-frontend-mu.vercel.app/",
-      image: "/quickcart.png",
+      // use second pasted image: place file at src/assets/quickcart.jpg
+      image: "/assets/quickcart.jpg",
     },
     {
       title: "MyStream",
       description: "A seamless video streaming platform for watching and discovering content.",
       link: "https://mystream-rho.vercel.app/",
-      image: "/mystream.png",
+      // use third pasted image: place file at src/assets/mystream.jpg
+      image: "/assets/mystream.jpg",
     },
 
   ];
