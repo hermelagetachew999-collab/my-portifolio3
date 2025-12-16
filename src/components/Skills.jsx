@@ -12,6 +12,7 @@ import {
   SiGit,
   SiGithub,
   SiVite,
+  SiMysql,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -30,6 +31,8 @@ export default function Skills() {
   ];
 
   const databaseSkills = [{ name: "MongoDB", icon: <SiMongodb /> }];
+  // add MySQL skill
+  databaseSkills.push({ name: "MySQL", icon: <SiMysql /> });
 
   const versionControlSkills = [
     { name: "Git", icon: <SiGit /> },
@@ -43,23 +46,23 @@ export default function Skills() {
   };
 
   const sectionStyle = {
-    flex: "1 1 160px",
-    background: "rgba(0,0,0,0.05)",
-    padding: "0.8rem",
-    borderRadius: "10px",
-    boxShadow: "0 4px 12px #0b1f3b",
+    flex: "1 1 140px",
+    background: "rgba(0,0,0,0.04)",
+    padding: "0.5rem",
+    borderRadius: "8px",
+    boxShadow: "0 3px 8px #0b1f3b",
     color: "#000000",
-    minWidth: "180px",
-    maxWidth: "220px",
+    minWidth: "140px",
+    maxWidth: "180px",
   };
 
   const skillsContainerStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: "3rem",
-    width: "200%",
-    maxWidth: "850px",
+    gap: "2rem",
+    width: "100%",
+    maxWidth: "900px",
   };
 
   return (
@@ -111,7 +114,7 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "0.9rem",
+          gap: "0.6rem",
         }}
       >
         {skills.map((skill, index) => (
@@ -122,14 +125,14 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             style={{
               background: "rgba(0,0,0,0.05)",
               borderRadius: "20px",
-              padding: "0.2rem 0.6rem",
+              padding: "0.15rem 0.5rem",
               display: "flex",
               alignItems: "center",
-              gap: "0.1rem",
-              fontSize: "0.75rem",
-              boxShadow: "0 1px 3px #0b1f3b",
+              gap: "0.2rem",
+              fontSize: "0.7rem",
+              boxShadow: "0 1px 2px #0b1f3b",
               cursor: "pointer",
-              height: "15px",
+              height: "20px",
             }}
           >
             {skill.icon && <span style={{ fontSize: "0.9rem" }}>{skill.icon}</span>}

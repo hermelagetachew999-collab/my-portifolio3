@@ -56,6 +56,7 @@ export default function Projects() {
 
       <div
         className="projects-grid"
+        style={{ gap: "2rem" }}
       >
         {projects.map((project, index) => (
           <motion.div
@@ -65,14 +66,14 @@ export default function Projects() {
             animate="visible"
               whileHover={{
               scale: 1.05,
-              boxShadow: "0 6px 16px #0b1f3b",
+              boxShadow: "0 8px 24px #0b1f3b",
             }}
             style={{
-              backgroundColor: "rgba(0,0,0,0.05)",
-              borderRadius: "10px",
+              backgroundColor: "rgba(0,0,0,0.04)",
+              borderRadius: "12px",
               overflow: "hidden",
-              boxShadow: "0 4px 12px #0b1f3b",
-              transition: "all 0.3s ease",
+              boxShadow: "0 6px 18px #0b1f3b",
+              transition: "all 0.25s ease",
             }}
           >
             <img
@@ -80,7 +81,7 @@ export default function Projects() {
               alt={project.title}
               style={{
                 width: "100%",
-                height: "130px",
+                height: "220px",
                 objectFit: "cover",
               }}
             />
@@ -94,7 +95,7 @@ export default function Projects() {
               >
                 {project.title}
               </h3>
-              <p style={{ fontSize: "0.85rem", marginBottom: "0.8rem" }}>
+              <p style={{ fontSize: "1rem", marginBottom: "0.8rem", lineHeight: "1.4" }}>
                 {project.description}
               </p>
               <a

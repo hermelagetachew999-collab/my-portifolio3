@@ -47,7 +47,7 @@ export default function Navbar() {
               height: "35px",
               borderRadius: "50%",
               objectFit: "cover",
-              border: "transparent",
+              border: "3px solid #000000",
               cursor: "pointer",
             }}
             initial={{ opacity: 0, scale: 0.8 }}
