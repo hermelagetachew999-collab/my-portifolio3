@@ -116,7 +116,7 @@ export default function Hero() {
         >
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/herru-gech-19490538a"
+            href="https://www.linkedin.com/in/eleny-g-334838391?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             style={{
