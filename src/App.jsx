@@ -8,9 +8,7 @@ const Projects = lazy(() => import('./components/Projects'));
 const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
-  const backgroundImageUrl =
-    'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920';
-
+ 
   return (
     <div
       style={{
@@ -18,7 +16,6 @@ function App() {
         width: '100vw', // Full width
         margin: 0,
         padding: 0,
-        backgroundImage: `url(${backgroundImageUrl})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

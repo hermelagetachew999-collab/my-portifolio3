@@ -36,11 +36,11 @@ export default function About() {
       >
         <h2
           style={{
-            fontSize: "2.7rem",
+            fontSize: "2.4rem",
             marginBottom: "1rem",
             marginTop: "0.3rem",
             color: "#0b1f3b", // blue-black title
-            textShadow: "0 0 10px #0b1f3b", // soft blue-black glow
+             // soft blue-black glow
           }}
         >
           About Me
@@ -72,14 +72,14 @@ export default function About() {
               className="about-card"
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-10px)";
-                e.currentTarget.style.boxShadow = "0 8px 20px #0b1f3b";
+                e.currentTarget.style.boxShadow = "0 5px 30px #0b1f3b";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "0 4px 12px #0b1f3b";
               }}
             >
-              <h3 style={{ fontSize: "1.3rem", marginBottom: "0.25rem", color: "#000000" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "0rem", color: "#24037cff" }}>
                 {card.title}
               </h3>
               <p

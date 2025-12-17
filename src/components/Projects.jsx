@@ -51,10 +51,10 @@ export default function Projects() {
           fontSize: "2.3rem",
           marginBottom: "3rem",
           color: "#0b1f3b",
-          textShadow: "0 0 10px #0b1f3b",
+         
         }}
       >
-        🛠️ My Projects
+         My Projects
       </motion.h2>
 
       <div
