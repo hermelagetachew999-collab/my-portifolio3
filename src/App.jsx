@@ -13,7 +13,7 @@ function App() {
     <div
       style={{
         minHeight: '100vh',
-        width: '100vw', // Full width
+       width: '100%',
         margin: 0,
         padding: 0,
         backgroundSize: 'cover',
@@ -22,7 +22,7 @@ function App() {
         backgroundAttachment: 'fixed',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+       maxWidth: '1200px',
         alignItems: 'center',
         color: '#fff',
         fontFamily: "'Inter', sans-serif",
@@ -50,7 +50,7 @@ function App() {
           zIndex: 1,
           width: '100%',
           maxWidth: '1200px',
-          padding: '1rem',
+          padding: '0',
         }}
       >
         <Navbar />

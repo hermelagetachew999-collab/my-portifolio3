@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Top row: Services | About Me | Contact Me (inline) */}
         <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
           <div style={{ flex: '1', textAlign: 'left' }}>
-            <h4 style={{ margin: '0 0 0.5rem 0' }}>Services</h4>
+            <h4 style={{ margin: '0 0 0 0' }}>Services</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#000000ff' }}>
               <li>Responsive Web Design</li>
               <li>React & Frontend Development</li>

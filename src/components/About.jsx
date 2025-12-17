@@ -58,10 +58,7 @@ export default function About() {
               title: "💻 Skills & Certificates",
               text: "I enjoy blending technology and art to create interactive web experiences. My certifications reflect a deep commitment to growth and mastery in frontend and backend development, including Git and GitHub.",
             },
-            {
-              title: "🎨 Creativity",
-              text: "I’m also a certified artist — I draw and paint. My artistic side inspires me to craft visually appealing, responsive, and meaningful digital designs.",
-            },
+            
             {
               title: "🏅 Certifications",
               text: "I hold certificates in Responsive Web Design, JavaScript, Frontend Libraries, Data Visualization, Backend & API Development, and version control with Git and GitHub. I have strong skills in React, HTML, CSS, and modern web design.",

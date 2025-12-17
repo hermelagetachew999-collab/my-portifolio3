@@ -48,21 +48,22 @@ export default function Skills() {
   const sectionStyle = {
     flex: "1 1 140px",
     background: "rgba(0,0,0,0.04)",
-    padding: "0.45rem",
-    borderRadius: "6px",
-    boxShadow: "0 3px 8px #0b1f3b",
+    padding: "0.4rem",
+    borderRadius: "15px",
+    boxShadow: "0 8px 10px #787878ff",
     color: "#000000",
     minWidth: "140px",
-    maxWidth: "200px",
+    maxWidth: "280px",
+    margin: "5px",
   };
 
   const skillsContainerStyle = {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: "2rem",
-    width: "100%",
-    maxWidth: "900px",
+    gap: "1.5rem",
+    width: "150%",
+    maxWidth: "1200px",
   };
 
   return (
@@ -89,17 +90,17 @@ export default function Skills() {
           fontSize: "1.8rem",
           marginBottom: "2rem",
           color: "#000000",
-          textShadow: "0 0 8px #0b1f3b",
+          
         }}
       >
-        ⚙️ My Skills
+         My Skills
       </motion.h2>
 
       <div style={skillsContainerStyle}>
-        <SkillCategory title="🎨 Frontend" color="#000000" skills={frontendSkills} variants={skillVariants} sectionStyle={sectionStyle} />
-        <SkillCategory title="⚙️ Backend" color="#000000" skills={backendSkills} variants={skillVariants} sectionStyle={sectionStyle} />
-        <SkillCategory title="🗄️ Database" color="#000000" skills={databaseSkills} variants={skillVariants} sectionStyle={sectionStyle} />
-        <SkillCategory title="🧭 Version Control" color="#000000" skills={versionControlSkills} variants={skillVariants} sectionStyle={sectionStyle} />
+        <SkillCategory title="Frontend" color="#0f2754ff" skills={frontendSkills} variants={skillVariants} sectionStyle={sectionStyle} />
+        <SkillCategory title="Backend" color="#0f2754ff" skills={backendSkills} variants={skillVariants} sectionStyle={sectionStyle} />
+        <SkillCategory title="Database" color="#0f2754ff" skills={databaseSkills} variants={skillVariants} sectionStyle={sectionStyle} />
+        <SkillCategory title="Version Control" color="#0f2754ff" skills={versionControlSkills} variants={skillVariants} sectionStyle={sectionStyle} />
       </div>
     </section>
   );
@@ -114,7 +115,7 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "0.6rem",
+          gap: "0.4rem",
         }}
       >
         {skills.map((skill, index) => (
@@ -123,19 +124,18 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             variants={variants}
             whileHover="hover"
             style={{
-              background: "rgba(0,0,0,0.05)",
-              borderRadius: "6px",
-              padding: "0.25rem 0.6rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              fontSize: "0.82rem",
-              boxShadow: "0 1px 2px #0b1f3b",
-              cursor: "pointer",
-              height: "28px",
+            display: "flex",
+    alignItems: "center",
+    gap: "0.4rem",
+    padding: "0.3rem 0.6rem",
+    borderRadius: "12px",
+    backgroundColor: "transparent",
+    color: "#000",
+    fontSize: "0.95rem",
+    fontWeight: "450",
             }}
           >
-            {skill.icon && <span style={{ fontSize: "0.9rem" }}>{skill.icon}</span>}
+            {skill.icon && <span style={{ fontSize: "1.6rem" }}>{skill.icon}</span>}
             <span>{skill.name}</span>
           </motion.div>
         ))}

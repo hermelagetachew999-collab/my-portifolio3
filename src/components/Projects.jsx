@@ -69,13 +69,13 @@ export default function Projects() {
             animate="visible"
               whileHover={{
               scale: 1.05,
-              boxShadow: "0 8px 24px #0b1f3b",
+              boxShadow: "0 8px 10px #787878ff",
             }}
             style={{
               backgroundColor: "rgba(0,0,0,0.04)",
               borderRadius: "12px",
               overflow: "hidden",
-              boxShadow: "0 6px 18px #0b1f3b",
+              boxShadow: "0 8px 10px #787878ff",
               transition: "all 0.25s ease",
             }}
           >

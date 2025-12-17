@@ -20,7 +20,7 @@ export default function Navbar() {
         top: 0,
         left: 0,
         width: "100%",
-        background: "rgba(232, 217, 227, 0.8)",
+        background: "rgba(255, 255, 255, 0.8)",
         backdropFilter: "blur(8px)",
         color: "#fff",
         padding: "0.8rem 0",
