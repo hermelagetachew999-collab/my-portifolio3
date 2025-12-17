@@ -3,14 +3,14 @@
 *{
   margin: 0;
   padding: 0;
-  
+   box-sizing: border-box;
 }
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
  min-height: 100vh;
- min-width: 400px;
+ 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
@@ -91,20 +91,22 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100svh;
-  padding: 0 5%;
+  min-height: 100vh;
+ padding-top: 4rem;
+ padding-left: 2rem;
   background: #ffffff; /* make hero background pure white */
   color: #000000; /* hero text black */
   font-weight: bold;
   flex-wrap: wrap;
-  margin-top: 50px;
   
 }
 
 .hero-left {
   position: relative;
-  width: 400px; /* increased for larger profile */
-  height: 480px; /* increased for larger profile */
+   width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  height: auto; /* increased for larger profile */
   border-radius: 70%;
   overflow: hidden;
   background: transparent; /* keep image visible on white background */
@@ -121,10 +123,13 @@ button:focus-visible {
 .hero-right {
   flex: 1;
   min-width: 300px;
-  text-align: left;
-  margin-left: 5rem;
+ 
 }
-
+@media (min-width: 1024px) {
+  .hero-right {
+    margin-left: 5rem;
+  }
+}
 .hero-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -147,7 +152,7 @@ font-family: monospace;
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* increase min width */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   max-width: 1220px; /* allow larger project cards */
   margin: 0 auto;
@@ -201,7 +206,7 @@ font-family: monospace;
 
 /* About Component Styles */
 .about-section {
-  padding: 6rem 2rem 8rem;
+  padding: 1rem 2rem 2rem;
   text-align: center;
   background: #ffffff;
   color: #000000;
@@ -224,8 +229,10 @@ font-family: monospace;
 
 .about-card {
   flex: 1 1 300px; /* maximize width when possible */
-  min-width: 350px;
-  max-width: 100%;
+  min-width: unset;
+  width: 100%;
+  max-width: 420px;
+ 
   max-height: 125px; /* minimize height */
   height: auto;
   background: rgba(0, 0, 0, 0.05);
@@ -236,7 +243,7 @@ font-family: monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: left; 
   gap: 0.25rem;
 }
 

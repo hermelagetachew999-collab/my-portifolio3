@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="hero-title"
         >
-           Hello, I’m <span style={{ color: "rgba(243, 236, 240, 0.8)" }}>Hermela</span>
+           Hello, I’m <span style={{ color: "rgba(0, 0, 0, 0.8)" }}>Hermela</span>
         </motion.h1>
 
         <motion.h2

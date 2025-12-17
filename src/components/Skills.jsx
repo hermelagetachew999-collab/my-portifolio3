@@ -71,7 +71,7 @@ export default function Skills() {
       id="skills"
       style={{
         padding: "0rem 1rem",
-        minHeight: "30vh",
+        minHeight: "20vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -80,6 +80,7 @@ export default function Skills() {
         fontWeight:"bold",
         background: "#ffffff",
         color: "#000000",
+        minWidth: "20vh",
       }}
     >
       <motion.h2
@@ -126,9 +127,9 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             style={{
             display: "flex",
     alignItems: "center",
-    gap: "0.4rem",
+    gap: "1.2rem",
     padding: "0.3rem 0.6rem",
-    borderRadius: "12px",
+    borderRadius: "25px",
     backgroundColor: "transparent",
     color: "#000",
     fontSize: "0.95rem",
