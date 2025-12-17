@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 const About = lazy(() => import('./components/About'));
 const Skills = lazy(() => import('./components/Skills'));
 const Projects = lazy(() => import('./components/Projects'));
-const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
@@ -63,7 +62,6 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          <Contact />
           <Footer />
         </Suspense>
       </div>
