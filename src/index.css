@@ -224,21 +224,20 @@ font-family: monospace;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .about-card {
   flex: 1 1 300px; /* maximize width when possible */
   min-width: unset;
-  width: 100%;
-  max-width: 420px;
  
-  max-height: 125px; /* minimize height */
+  max-width: 480px;
+  max-height: 165px; /* minimize height */
   height: auto;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 0.4rem;
-  box-shadow: 0 8px 10px #787878ff;
+  box-shadow: 0 4px 10px #787878ff;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
