@@ -52,6 +52,7 @@ export default function Hero() {
         >
           <ReactTyped
             strings={[
+              "Full-Stack Developer",
               "Web Developer(React)",
               "Clean UI",
               "Fast & Responsive Websites",
