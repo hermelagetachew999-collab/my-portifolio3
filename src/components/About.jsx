@@ -56,7 +56,7 @@ export default function About() {
             },
             {
               title: "💻 Skills & Certificates",
-              text: "I enjoy blending technology and art to create interactive web experiences. My certifications reflect a deep commitment to growth and mastery in frontend and backend development, including Git and GitHub.",
+              text: "I enjoy blending technology to create interactive web experiences. My certifications reflect a deep commitment to growth and mastery in frontend and backend development, including Git and GitHub.",
             },
             
             {
