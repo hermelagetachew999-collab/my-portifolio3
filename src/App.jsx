@@ -12,36 +12,20 @@ function App() {
   return (
     <div
       style={{
-        minHeight: '100vh',
-       width: '100%',
-        margin: 0,
-        padding: 0,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        display: 'flex',
-        flexDirection: 'column',
-       maxWidth: '1200px',
-        alignItems: 'center',
-        color: '#fff',
-        fontFamily: "'Inter', sans-serif",
-        overflowX: 'hidden',
-        position: 'relative',
+   minHeight: '100vh',
+    width: '100%',
+    margin: 0,
+    padding: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    color: '#fff',
+    fontFamily: "'Inter', sans-serif",
+    overflowX: 'hidden',
+    position: 'relative',
+         
       }}
     >
-      {/* Dark overlay */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          zIndex: 0,
-        }}
-      ></div>
+  
 
       {/* Main content */}
       <div
@@ -49,8 +33,9 @@ function App() {
           position: 'relative',
           zIndex: 1,
           width: '100%',
-          maxWidth: '1200px',
+          maxWidth: '1220px',
           padding: '0',
+          
         }}
       >
         <Navbar />

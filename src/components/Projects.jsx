@@ -71,6 +71,7 @@ export default function Projects() {
               scale: 1.05,
               boxShadow: "0 8px 10px #787878ff",
             }}
+            whileTap={{ scale: 0.97 }}
             style={{
               backgroundColor: "rgba(0,0,0,0.04)",
               borderRadius: "12px",
@@ -84,7 +85,7 @@ export default function Projects() {
               alt={project.title}
               style={{
                 width: "100%",
-                height: "220px",
+                height: "200px",
                 objectFit: "cover",
               }}
             />

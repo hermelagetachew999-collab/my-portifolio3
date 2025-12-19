@@ -19,6 +19,7 @@ export default function Navbar() {
         position: "fixed",
         top: 0,
         left: 0,
+       
         width: "100%",
         background: "rgba(255, 255, 255, 0.8)",
         backdropFilter: "blur(8px)",
@@ -43,8 +44,8 @@ export default function Navbar() {
             src="/profile.jpg"
             alt="Profile"
             style={{
-              width: "35px",
-              height: "35px",
+              width: "40px",
+              height: "40px",
               borderRadius: "50%",
               objectFit: "cover",
               border: "3px solid #000000",
@@ -54,7 +55,7 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
           />
-          <motion.h1
+          <motion.h1 className="brand-name"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -106,15 +107,14 @@ export default function Navbar() {
         <div
           onClick={() => setIsOpen(!isOpen)}
           style={{
-            display: "none",
             flexDirection: "column",
             cursor: "pointer",
           }}
           className="menu-toggle"
         >
-          <span style={{ width: "25px", height: "3px", background: "#fff", margin: "4px 0" }}></span>
-          <span style={{ width: "25px", height: "3px", background: "#fff", margin: "4px 0" }}></span>
-          <span style={{ width: "25px", height: "3px", background: "#fff", margin: "4px 0" }}></span>
+          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
+          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
+          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
         </div>
       </div>
 
@@ -125,8 +125,9 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           style={{
             position: "absolute",
-            top: "60px",
-            right: "20px",
+           top: "100%",
+marginTop: "0.5rem",
+            right: "1rem",
             background: "rgba(255, 255, 255, 0.9)",
             borderRadius: "10px",
             padding: "1rem 1.5rem",

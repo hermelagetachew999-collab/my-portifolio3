@@ -53,7 +53,7 @@ export default function Skills() {
     boxShadow: "0 8px 10px #787878ff",
     color: "#000000",
     minWidth: "140px",
-    maxWidth: "280px",
+    maxWidth: "240px",
     margin: "5px",
   };
 
@@ -62,7 +62,7 @@ export default function Skills() {
     flexWrap: "wrap",
     justifyContent: "center",
     gap: "1.5rem",
-    width: "150%",
+    width: "100%",
     maxWidth: "1200px",
   };
 
@@ -80,7 +80,7 @@ export default function Skills() {
         fontWeight:"bold",
         background: "#ffffff",
         color: "#000000",
-        minWidth: "20vh",
+        
       }}
     >
       <motion.h2
@@ -109,7 +109,7 @@ export default function Skills() {
 
 function SkillCategory({ title, color, skills, variants, sectionStyle }) {
   return (
-    <motion.div initial="hidden" animate="visible" variants={variants} style={sectionStyle}>
+    <motion.div  whileHover="hover" whileTap={{ scale: 0.96 }} initial="hidden" animate="visible" variants={variants} style={sectionStyle}>
       <h3 style={{ fontSize: "1rem", marginBottom: "0.5rem", color }}>{title}</h3>
       <div
         style={{
@@ -127,7 +127,7 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             style={{
             display: "flex",
     alignItems: "center",
-    gap: "1.2rem",
+    gap: "0.6rem",
     padding: "0.3rem 0.6rem",
     borderRadius: "25px",
     backgroundColor: "transparent",

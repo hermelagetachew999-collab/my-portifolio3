@@ -3,11 +3,11 @@ import { FaTelegram, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer id="footer" style={{ padding: '1.25rem 2rem', backgroundColor: '#e6e6e6ff', color: '#000000ff' }}>
+    <footer id="footer" style={{ padding: '1.25rem 2rem', width: '100%', boxSizing: 'border-box', backgroundColor: '#e6e6e6ff', color: '#000000ff' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
 
         {/* Top row: Services | About Me | Contact Me (inline) */}
-        <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem' }}>
+        <div id="footer-top" style={{ width: '100%', display: 'flex', gap: '1.5rem' }}>
           <div style={{ flex: '1', textAlign: 'left' }}>
             <h4 style={{ margin: '0 0 0 0' }}>Services</h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#000000ff' }}>
