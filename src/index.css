@@ -92,36 +92,37 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-padding: 4rem 2rem;
-  background: #ffffff; /* make hero background pure white */
-  color: #000000; /* hero text black */
+  padding: 4rem 2rem;
+  background: #ffffff;
+  color: #000000;
   font-weight: bold;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .hero-left {
   position: relative;
-   width: 100%;
+  width: 100%;
   max-width: 360px;
   aspect-ratio: 4 / 5;
-  height: auto; /* increased for larger profile */
+  height: auto;
   border-radius: 70%;
   overflow: hidden;
-  background: transparent; /* keep image visible on white background */
-  border: 5px solid #000000; /* bold black profile border */
+  background: transparent;
+  border: 5px solid #000000;
 }
 
 /* Hero icons spacing */
 .hero-icons {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero-right {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
  
 }
 @media (min-width: 1024px) {
@@ -148,29 +149,77 @@ font-family: monospace;
   font-weight: lighter;
 }
 @media (max-width: 768px) {
-  .hero-icons {
-    justify-content: center; /* instead of flex-start */
-  }
-}
-
-@media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
+    padding: 3rem 1.5rem;
+    gap: 2rem;
   }
 
   .hero-left {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
+    max-width: 240px;
+  }
+
+  .hero-icons {
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
   }
 }
+
 @media (max-width: 480px) {
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+  
+  .hero-left {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+  }
+  
   .hero-title {
     font-size: 1.8rem;
   }
 
   .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  
+  .hero-icons {
+    gap: 1rem;
+  }
+  
+  .hero-icons a {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-subtitle {
     font-size: 1.1rem;
+  }
+  
+  .hero-left {
+    width: 180px;
+    height: 180px;
+    max-width: 180px;
   }
 }
 
@@ -217,50 +266,7 @@ font-family: monospace;
   }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-  }
 
-  .hero-left {
-    width: 100%;
-    height: auto;
-    max-width: 320px; /* allow larger profile on small screens */
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-right {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .hero-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    align-items: center;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.5rem;
-  }
-
-  .hero-description {
-    font-size: 0.9rem;
-    max-width: 90%;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
 
 /* About Component Styles */
 .about-section {
@@ -306,7 +312,7 @@ font-family: monospace;
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 4rem 1rem 6rem;
+    padding: 3rem 1.5rem 4rem;
   }
 
   .about-cards {
@@ -315,7 +321,29 @@ font-family: monospace;
   }
 
   .about-card {
-    max-width: 90%;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2.5rem 1rem 3rem;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem !important;
+  }
+  
+  .about-card {
+    padding: 1.2rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .about-card p {
+    font-size: 0.85rem !important;
   }
 }
 @media (hover: hover) {
@@ -324,29 +352,15 @@ font-family: monospace;
     box-shadow: 0 5px 30px #0b1f3b;
   }
 }
-.footer-top {
-  flex-direction: row;
-}
 
-/* Mobile */
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-top div {
-    text-align: center !important;
-    align-items: center !important;
-  }
-}
-@media (max-width: 480px) {
-  .brand-name {
-    font-size: 0.85rem;
-  }
-}
 @media (max-width: 480px) {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
   p { font-size: 0.95rem; }
+}
+
+@media (max-width: 375px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  p { font-size: 0.9rem; }
 }

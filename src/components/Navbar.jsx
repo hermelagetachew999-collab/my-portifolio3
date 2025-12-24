@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
         style={{
           maxWidth: "1100px",
           margin: "0 auto",
-          padding: "0 2rem",
+          padding: "0 1.5rem",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -103,71 +103,128 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile Menu Icon */}
-        <div
+        {/* Mobile Menu Icon (Burger) - Right Side */}
+        <motion.div
           onClick={() => setIsOpen(!isOpen)}
           style={{
+            display: "none",
             flexDirection: "column",
             cursor: "pointer",
+            gap: "4px",
+            padding: "8px",
           }}
           className="menu-toggle"
+          whileTap={{ scale: 0.9 }}
         >
-          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
-          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
-          <span style={{ width: "25px", height: "3px", background: "#000", margin: "4px 0" }}></span>
-        </div>
+          <motion.span 
+            style={{ 
+              width: "25px", 
+              height: "3px", 
+              background: "#000", 
+              borderRadius: "2px",
+              transition: "all 0.3s ease"
+            }}
+            animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+          ></motion.span>
+          <motion.span 
+            style={{ 
+              width: "25px", 
+              height: "3px", 
+              background: "#000", 
+              borderRadius: "2px",
+              transition: "all 0.3s ease"
+            }}
+            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+          ></motion.span>
+          <motion.span 
+            style={{ 
+              width: "25px", 
+              height: "3px", 
+              background: "#000", 
+              borderRadius: "2px",
+              transition: "all 0.3s ease"
+            }}
+            animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+          ></motion.span>
+        </motion.div>
       </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <motion.ul
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          style={{
-            position: "absolute",
-           top: "100%",
+      {/* Mobile Dropdown with Fade-in Animation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={{
+              position: "absolute",
+             top: "100%",
 marginTop: "0.5rem",
-            right: "1rem",
-            background: "rgba(255, 255, 255, 0.9)",
-            borderRadius: "10px",
-            padding: "1rem 1.5rem",
-            listStyle: "none",
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-          }}
-        >
-          {navItems.map((item, index) => (
-            <li key={index}>
-              <a
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                style={{
-                  color: "#080505ff",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                }}
+              right: "1rem",
+              background: "rgba(255, 255, 255, 0.95)",
+              backdropFilter: "blur(10px)",
+              borderRadius: "12px",
+              padding: "1rem 1.5rem",
+              listStyle: "none",
+              display: "flex",
+              flexDirection: "column",
+              gap: "1rem",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
+              minWidth: "200px",
+            }}
+          >
+            {navItems.map((item, index) => (
+              <motion.li 
+                key={index}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
               >
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </motion.ul>
-      )}
+                <a
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  style={{
+                    color: "#080505ff",
+                    textDecoration: "none",
+                    fontSize: "1.1rem",
+                    fontWeight: "500",
+                    display: "block",
+                    padding: "0.5rem 0",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => (e.target.style.color = "#66ccff")}
+                  onMouseLeave={(e) => (e.target.style.color = "#080505ff")}
+                >
+                  {item.name}
+                </a>
+              </motion.li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
 
       <style>
         {`
           html {
-            scroll-behavior: smooth; /* ✅ smooth scroll added */
+            scroll-behavior: smooth;
           }
 
           @media (max-width: 768px) {
             .nav-links {
-              display: none;
+              display: none !important;
             }
             .menu-toggle {
-              display: flex;
+              display: flex !important;
+            }
+            .brand-name {
+              font-size: 0.9rem !important;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .brand-name {
+              font-size: 0.85rem !important;
             }
           }
         `}

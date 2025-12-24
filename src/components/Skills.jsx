@@ -70,17 +70,17 @@ export default function Skills() {
     <section
       id="skills"
       style={{
-        padding: "0rem 1rem",
+        padding: "0rem 1.5rem",
         minHeight: "20vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-start",
         textAlign: "center",
-        fontWeight:"bold",
+        fontWeight: "bold",
         background: "#ffffff",
         color: "#000000",
-        
+
       }}
     >
       <motion.h2
@@ -91,10 +91,10 @@ export default function Skills() {
           fontSize: "1.8rem",
           marginBottom: "2rem",
           color: "#000000",
-          
+
         }}
       >
-         My Skills
+        My Skills
       </motion.h2>
 
       <div style={skillsContainerStyle}>
@@ -103,13 +103,39 @@ export default function Skills() {
         <SkillCategory title="Database" color="#0f2754ff" skills={databaseSkills} variants={skillVariants} sectionStyle={sectionStyle} />
         <SkillCategory title="Version Control" color="#0f2754ff" skills={versionControlSkills} variants={skillVariants} sectionStyle={sectionStyle} />
       </div>
+
+      <style>
+        {`
+          @media (max-width: 768px) {
+            #skills {
+              padding: 0rem 1.5rem !important;
+            }
+            
+            #skills h2 {
+              font-size: 1.6rem !important;
+              margin-bottom: 1.5rem !important;
+            }
+          }
+
+          @media (max-width: 480px) {
+            #skills {
+              padding: 0rem 1rem !important;
+            }
+            
+            #skills h2 {
+              font-size: 1.5rem !important;
+              margin-bottom: 1.5rem !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 }
 
 function SkillCategory({ title, color, skills, variants, sectionStyle }) {
   return (
-    <motion.div  whileHover="hover" whileTap={{ scale: 0.96 }} initial="hidden" animate="visible" variants={variants} style={sectionStyle}>
+    <motion.div whileHover="hover" whileTap={{ scale: 0.96 }} initial="hidden" animate="visible" variants={variants} style={sectionStyle}>
       <h3 style={{ fontSize: "1rem", marginBottom: "0.5rem", color }}>{title}</h3>
       <div
         style={{
@@ -125,15 +151,15 @@ function SkillCategory({ title, color, skills, variants, sectionStyle }) {
             variants={variants}
             whileHover="hover"
             style={{
-            display: "flex",
-    alignItems: "center",
-    gap: "0.6rem",
-    padding: "0.3rem 0.6rem",
-    borderRadius: "25px",
-    backgroundColor: "transparent",
-    color: "#000",
-    fontSize: "0.95rem",
-    fontWeight: "450",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.6rem",
+              padding: "0.3rem 0.6rem",
+              borderRadius: "25px",
+              backgroundColor: "transparent",
+              color: "#000",
+              fontSize: "0.95rem",
+              fontWeight: "450",
             }}
           >
             {skill.icon && <span style={{ fontSize: "1.6rem" }}>{skill.icon}</span>}

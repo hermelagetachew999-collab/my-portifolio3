@@ -9,6 +9,9 @@ export default function Hero() {
     <section
       id="hero"
       className="hero-section"
+      style={{
+        padding: "4rem 1.5rem",
+      }}
     >
       {/* LEFT SIDE — PROFILE IMAGE */}
       <motion.div
@@ -41,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="hero-title"
         >
-           Hello, I’m <span style={{ color: "rgba(0, 0, 0, 0.8)" }}>Hermela</span>
+          Hello, I'm <span style={{ color: "rgba(0, 0, 0, 0.8)" }}>Hermela</span>
         </motion.h1>
 
         <motion.h2
@@ -52,7 +55,7 @@ export default function Hero() {
         >
           <ReactTyped
             strings={[
-              "Full-Stack Developer", 
+              "Full-Stack Developer",
               "Clean UI",
               "Fast & Responsive Websites",
             ]}
@@ -74,6 +77,9 @@ export default function Hero() {
         {/* 🌸 SOCIAL ICONS BELOW TEXT */}
         <div
           className="hero-icons"
+          style={{
+            marginTop: "1.5rem",
+          }}
         >
           {/* LinkedIn */}
           <a
@@ -82,13 +88,12 @@ export default function Hero() {
             rel="noopener noreferrer"
             style={{
               color: "#0A66C2",
-              fontSize: "1.6rem",
+              fontSize: "1.8rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
-              e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
+              e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -105,13 +110,12 @@ export default function Hero() {
             rel="noopener noreferrer"
             style={{
               color: "#0b1f3b",
-              fontSize: "1.6rem",
+              fontSize: "1.8rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
-              e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
+              e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -128,13 +132,12 @@ export default function Hero() {
             rel="noopener noreferrer"
             style={{
               color: "#0b1f3b",
-              fontSize: "1.6rem",
+              fontSize: "1.8rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
-              e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
+              e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -151,13 +154,12 @@ export default function Hero() {
             rel="noopener noreferrer"
             style={{
               color: "#0088cc",
-              fontSize: "1.6rem",
+              fontSize: "1.8rem",
               transition: "transform 0.25s, text-shadow 0.25s",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.15)";
-              e.currentTarget.style.textShadow = "0 0 8px #fb92e4ff";
-                e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
+              e.currentTarget.style.textShadow = "0 0 8px #0b1f3b";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";

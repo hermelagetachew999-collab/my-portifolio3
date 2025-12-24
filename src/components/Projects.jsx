@@ -36,7 +36,7 @@ export default function Projects() {
     <section
       id="projects"
       style={{
-        padding: "6rem 1rem",
+        padding: "6rem 1.5rem",
         textAlign: "center",
         background: "#ffffff",
         minHeight: "100vh",
@@ -51,10 +51,10 @@ export default function Projects() {
           fontSize: "2.3rem",
           marginBottom: "3rem",
           color: "#0b1f3b",
-         
+
         }}
       >
-         My Projects
+        My Projects
       </motion.h2>
 
       <div
@@ -67,7 +67,7 @@ export default function Projects() {
             variants={projectVariants}
             initial="hidden"
             animate="visible"
-              whileHover={{
+            whileHover={{
               scale: 1.05,
               boxShadow: "0 8px 10px #787878ff",
             }}
@@ -107,7 +107,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  padding: "0.4rem 0.8rem",
+                  padding: "0.5rem 1rem",
                   backgroundColor: "#000000",
                   color: "#ffffff",
                   borderRadius: "5px",
@@ -115,6 +115,7 @@ export default function Projects() {
                   fontWeight: "500",
                   transition: "background 0.3s ease",
                   cursor: "pointer",
+                  display: "inline-block",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#0b1f3b")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
@@ -125,6 +126,43 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
+
+      <style>
+        {`
+          @media (max-width: 768px) {
+            #projects {
+              padding: 4rem 1.5rem !important;
+            }
+            
+            #projects h2 {
+              font-size: 2rem !important;
+            }
+          }
+
+          @media (max-width: 480px) {
+            #projects {
+              padding: 3rem 1rem !important;
+            }
+            
+            #projects h2 {
+              font-size: 1.8rem !important;
+              margin-bottom: 2rem !important;
+            }
+            
+            .projects-grid > div img {
+              height: 160px !important;
+            }
+            
+            .projects-grid > div h3 {
+              font-size: 1rem !important;
+            }
+            
+            .projects-grid > div p {
+              font-size: 0.9rem !important;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 }
